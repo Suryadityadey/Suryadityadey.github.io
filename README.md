@@ -1,29 +1,82 @@
+
 # Suryaditya Dey — Portfolio
 
-A responsive, single-page developer portfolio built with plain HTML, CSS and JavaScript.
+A responsive, single-page developer portfolio built using HTML, CSS and JavaScript.
 
-## Run locally
-1. Extract the ZIP.
-2. Open `index.html` in a browser, or run:
-   ```bash
-   python -m http.server 8000
-   ```
-3. Visit `http://localhost:8000`.
+The portfolio highlights my education, technical skills, internships, featured projects, GitHub repositories and achievements.
 
-## Publish free with GitHub Pages
-1. Create a new public repository named `Suryadityadey.github.io` on GitHub.
-2. Upload `index.html` and this `README.md` to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and `/ (root)`, then Save.
-5. Wait for GitHub Pages to publish. Your site URL will be:
-   `https://suryadityadey.github.io/`
+## Live Portfolio
 
-## Before publishing
-- Verify phone number, email, dates, CGPA and all project descriptions.
-- Replace any generic project GitHub links with direct repository links once you confirm the exact repository names.
-- Add a PDF CV to the project root and link it from the hero section if you want a downloadable resume.
-- The GitHub repository section uses the public GitHub REST API and may be affected by GitHub's unauthenticated rate limit.
-- This is a static site. The contact links open email/phone apps; no form data is collected or stored.
+[Visit my portfolio](https://suryadityadey.github.io/)
 
-## Customization
-Edit `index.html`. No npm install or build step is required.
+## Features
+
+- Responsive design for desktop, tablet and mobile.
+- Dark theme with gradient styling.
+- Featured software development and AI/ML projects.
+- Technology skills with programming-language and framework icons.
+- Internship and tutoring experience.
+- Education and CGPA.
+- GitHub repository section with search and sorting.
+- Contact links for email, phone, LinkedIn and GitHub.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Devicon technology icons
+- GitHub REST API
+
+## Run Locally
+
+1. Clone or download this repository.
+2. Open the project folder.
+3. Open `index.html` in a browser.
+
+Alternatively, run a local server:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit:
+
+http://localhost:8000
+
+## GitHub Pages Deployment
+
+This portfolio is hosted using GitHub Pages.
+
+To update the existing website:
+
+1. Make changes to `index.html` or other project files.
+2. Save your changes.
+3. Push the updated files to the existing GitHub repository.
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+GitHub Pages will publish the updated website after deployment completes.
+
+## GitHub
+
+[GitHub Profile](https://github.com/Suryadityadey)
+
+## LinkedIn
+
+[LinkedIn Profile](https://www.linkedin.com/in/suryaditya-dey-658143271/)
+
+## Contact
+
+Email: suryaditya9153@gmail.com
+
+Location: Kolkata, West Bengal, India
+
+---
+
+Built with HTML, CSS and JavaScript.
