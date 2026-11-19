@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Suryaditya Dey — Computer Science and Engineering student, software developer and AI/ML enthusiast." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Suryaditya Dey | Software Developer & AI/ML Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--panel:#111a2e;--panel2:#0e1729;--text:#eef3ff;--muted:#a7b2ca;--line:rgba(180,198,230,.15);--cyan:#63e6df;--blue:#82aaff;--violet:#b59cff;--green:#9be7b1;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(74,102,190,.17),transparent 36%),radial-gradient(ellipse at 0% 35%,rgba(36,175,164,.09),transparent 32%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.mono{font-family:"DM Mono",monospace;color:var(--cyan);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(11,16,32,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.1rem}.brand span{color:var(--cyan)}.links{display:flex;gap:25px;align-items:center;color:var(--muted);font-size:.88rem}.links a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:9px}
+    .hero{padding:94px 0 82px;display:grid;grid-template-columns:1.35fr .65fr;gap:54px;align-items:center;min-height:610px}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:22px}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 18px var(--green)}h1{font-size:clamp(2.8rem,6vw,5.25rem);line-height:1.04;letter-spacing:-.07em;margin:0 0 22px;font-weight:800}.gradient{background:linear-gradient(100deg,var(--cyan),var(--blue) 55%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.intro{font-size:1.08rem;color:var(--muted);max-width:680px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:11px;font-weight:800;font-size:.9rem;border:1px solid var(--line);transition:.2s}.btn.primary{background:var(--cyan);color:#08121f;border-color:var(--cyan)}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.secondary{background:rgba(255,255,255,.035)}.hero-card{background:linear-gradient(145deg,rgba(99,230,223,.11),rgba(130,170,255,.05));border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 24px 80px rgba(0,0,0,.2)}.avatar{width:88px;height:88px;border-radius:22px;object-fit:cover;background:#1c2942;border:1px solid var(--line)}.hero-card h3{margin:18px 0 4px;font-size:1.2rem}.hero-card p{margin:0;color:var(--muted);font-size:.9rem}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}.stat{background:rgba(5,10,22,.35);border:1px solid var(--line);border-radius:13px;padding:13px}.stat b{display:block;font-size:1.2rem}.stat span{font-size:.75rem;color:var(--muted)}
+    section{padding:78px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.section-head h2{font-size:clamp(1.8rem,4vw,2.65rem);letter-spacing:-.055em;margin:7px 0 0}.section-head p{max-width:470px;color:var(--muted);margin:0;font-size:.92rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,rgba(18,29,51,.92),rgba(13,21,38,.94));border:1px solid var(--line);border-radius:18px;padding:22px;transition:.22s}.card:hover{transform:translateY(-4px);border-color:rgba(99,230,223,.42)}.card h3{font-size:1.05rem;letter-spacing:-.025em;margin:10px 0 8px}.card p{color:var(--muted);font-size:.88rem;margin:0 0 16px}.card-top{display:flex;justify-content:space-between;align-items:center}.number{font-family:"DM Mono",monospace;color:var(--cyan);font-size:.82rem}.arrow{color:var(--cyan);font-size:1.2rem}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.tag{font-size:.72rem;color:#c9d6ef;border:1px solid var(--line);background:rgba(255,255,255,.035);padding:5px 9px;border-radius:100px}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skillbox{padding:20px;border:1px solid var(--line);border-radius:16px;background:rgba(17,26,46,.66)}.skillbox h3{margin:0 0 12px;font-size:.95rem}.skillbox p{color:var(--muted);margin:0;font-size:.86rem}
+    .timeline{display:grid;gap:14px}.item{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:21px 0;border-bottom:1px solid var(--line)}.date{font-family:"DM Mono",monospace;color:var(--cyan);font-size:.78rem}.item h3{margin:0 0 4px;font-size:1.02rem}.item .sub{color:var(--muted);font-size:.85rem;margin-bottom:8px}.item p{margin:0;color:var(--muted);font-size:.88rem}
+    .education{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu{padding:20px;border:1px solid var(--line);border-radius:15px;background:rgba(17,26,46,.6)}.edu strong{display:block}.edu span{color:var(--muted);font-size:.85rem}.edu .score{color:var(--cyan);font-weight:800;margin-top:8px}
+    .repo-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.repo-controls input,.repo-controls select{background:#111a2e;border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--text);font:inherit;font-size:.85rem}.repo-controls input{min-width:220px}.repo-card{min-height:190px;display:flex;flex-direction:column}.repo-card .repo-foot{margin-top:auto;display:flex;gap:14px;color:var(--muted);font-size:.76rem}.repo-card a{color:var(--cyan);font-weight:800;font-size:.82rem}.status{color:var(--muted);font-size:.86rem;margin:14px 0}
+    .achievement{display:flex;gap:13px;align-items:flex-start}.achievement .symbol{font-size:1.2rem}.achievement p{margin:0}.contact{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-panel{padding:26px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(99,230,223,.08),rgba(17,26,46,.75))}.contact-panel h3{margin:0 0 10px}.contact-panel p{color:var(--muted);font-size:.9rem}.contact-links{display:grid;gap:12px}.contact-links a{padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025);font-size:.88rem}.contact-links a:hover{border-color:var(--cyan);color:var(--cyan)}
+    footer{padding:27px 0;color:var(--muted);font-size:.8rem}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;min-height:auto;padding:72px 0}.hero-card{max-width:480px}.grid{grid-template-columns:repeat(2,1fr)}.skills{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:12px}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,var(--max))}.links{display:none;position:absolute;top:72px;left:0;right:0;background:#0d1528;padding:18px 22px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.hero{padding:60px 0}.grid,.skills,.education,.contact{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:7px}section{padding:60px 0}.repo-controls input{width:100%}.repo-controls{align-items:stretch}.repo-controls select{flex:1}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#home">SD<span>.</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><span class="dot"></span><span class="mono">Open to software & AI/ML opportunities</span></div>
+      <h1>Hi, I'm<br><span class="gradient">Suryaditya Dey.</span></h1>
+      <p class="intro">Computer Science and Engineering student building practical software and AI-powered solutions. I work across Python, Java, databases, computer vision and full-stack development.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work ↗</a>
+        <a class="btn secondary" href="mailto:suryaditya9153@gmail.com">Contact me</a>
+        <a class="btn secondary" href="https://github.com/Suryadityadey" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <img class="avatar" id="avatar" src="https://github.com/Suryadityadey.png" alt="GitHub profile avatar" />
+      <h3>Suryaditya Dey</h3>
+      <p>B.Tech CSE · Narula Institute of Technology</p>
+      <div class="stats">
+        <div class="stat"><b>8.49</b><span>CGPA</span></div>
+        <div class="stat"><b>2027</b><span>Graduating batch</span></div>
+        <div class="stat"><b>2</b><span>Internship experiences</span></div>
+        <div class="stat"><b>3</b><span>Featured projects</span></div>
+      </div>
+      <div class="tags"><span class="tag">Software Development</span><span class="tag">AI / ML</span><span class="tag">Data Analytics</span></div>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">01 / About</div><h2>Curious by nature.<br>Practical by design.</h2></div><p>I enjoy understanding a problem from the ground up, choosing suitable tools, and turning an idea into a working application.</p></div>
+      <div class="card">
+        <p>I'm pursuing a B.Tech in Computer Science and Engineering at Narula Institute of Technology (MAKAUT). My experience includes AI/ML project development, Java application development, data analysis, API integration and full-stack workflows. Alongside technical work, mentoring students in programming has strengthened my ability to explain concepts clearly, communicate patiently and take responsibility for outcomes.</p>
+        <p>I'm particularly interested in software engineering, intelligent applications and data-driven problem solving. I value continuous learning, teamwork and building solutions that are useful beyond a classroom demonstration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">02 / Selected work</div><h2>Projects I've worked on</h2></div><p>A selection of academic and internship projects. The descriptions reflect the work and technologies listed in my CV.</p></div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-top"><span class="number">PROJECT 01</span><span class="arrow">↗</span></div>
+          <h3>AI-Enabled Antarctic Navigation Decision Support System</h3>
+          <p>Explores sea-ice conditions and iceberg movement using satellite and geospatial data to support safer, data-informed navigation decisions.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Geospatial Analytics</span><span class="tag">Satellite Data</span><span class="tag">Matplotlib</span><span class="tag">SQL</span></div>
+          <p style="margin-top:18px"><a href="https://github.com/Suryadityadey" target="_blank" rel="noreferrer">Find project on GitHub ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="number">PROJECT 02</span><span class="arrow">↗</span></div>
+          <h3>CivicFlow — Citizen Service & Document Verification</h3>
+          <p>A full-stack citizen-service platform concept for processing income, residence and birth-certificate applications with OCR-assisted document checks and workflow management.</p>
+          <div class="tags"><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">SQLite</span><span class="tag">SQLAlchemy</span><span class="tag">OpenCV</span><span class="tag">Tesseract OCR</span><span class="tag">JWT</span></div>
+          <p style="margin-top:18px"><a href="https://github.com/Suryadityadey" target="_blank" rel="noreferrer">Find project on GitHub ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="number">PROJECT 03</span><span class="arrow">↗</span></div>
+          <h3>Tennis Game Analytics using SportRadar</h3>
+          <p>Collects tennis data through the SportRadar API and uses Python, data processing and SQL to support an analytics dashboard and performance insights.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">SportRadar API</span><span class="tag">Pandas</span><span class="tag">MySQL</span><span class="tag">Streamlit</span></div>
+          <p style="margin-top:18px"><a href="https://github.com/Suryadityadey" target="_blank" rel="noreferrer">Find project on GitHub ↗</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">03 / Toolkit</div><h2>Skills & technologies</h2></div><p>Tools and concepts I've used in coursework, internships and project development.</p></div>
+      <div class="skills">
+        <div class="skillbox"><h3>Programming</h3><p>Java · Python · C · JavaScript</p></div>
+        <div class="skillbox"><h3>Web & Frameworks</h3><p>HTML · CSS · React.js · MERN fundamentals · FastAPI · Spring Boot (familiarity)</p></div>
+        <div class="skillbox"><h3>Databases</h3><p>MySQL · SQLite · SQLAlchemy</p></div>
+        <div class="skillbox"><h3>AI / Machine Learning</h3><p>Scikit-learn · Pandas · NumPy · NLP · Computer Vision · OCR · Data Preprocessing</p></div>
+        <div class="skillbox"><h3>Core Computer Science</h3><p>Data Structures & Algorithms · OOP · DBMS · Operating Systems · Computer Networks</p></div>
+        <div class="skillbox"><h3>Tools & AI Technologies</h3><p>Git · GitHub · VS Code · MySQL Workbench · LLMs · Prompt Engineering</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">04 / Experience</div><h2>Learning by building<br>and sharing.</h2></div></div>
+      <div class="timeline">
+        <div class="item"><div class="date">FEB 2026 — AUG 2026</div><div><h3>AI/ML Intern · Labmentix</h3><div class="sub">Artificial Intelligence, Machine Learning & Data Analytics</div><p>Worked on projects involving computer vision, natural language processing and data analytics; applied machine-learning techniques to practical problem statements.</p></div></div>
+        <div class="item"><div class="date">2026</div><div><h3>Java Development Intern · Saiket System</h3><div class="sub">Java application development</div><p>Developed Java applications and practised object-oriented programming, collections, exception handling and file handling.</p></div></div>
+        <div class="item"><div class="date">2024 — PRESENT</div><div><h3>Computer Science Tutor</h3><div class="sub">Online and offline mentoring</div><p>Mentor 25+ students in Java, Python, C and computer-science subjects. Prepare structured learning materials and explain programming concepts through practical examples.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">05 / Education</div><h2>Academic background</h2></div></div>
+      <div class="education">
+        <div class="edu"><strong>B.Tech — Computer Science & Engineering</strong><span>Narula Institute of Technology · MAKAUT · 2023–2027</span><div class="score">8.49 CGPA</div></div>
+        <div class="edu"><strong>Higher Secondary — WBCHSE</strong><span>Uttarpara Govt. High School · 2023</span><div class="score">69.2%</div></div>
+        <div class="edu"><strong>Madhyamik — WBBSE</strong><span>Uttarpara Children's Own Home · 2021</span><div class="score">84.4%</div></div>
+        <div class="edu"><strong>Certifications & Learning</strong><span>Labmentix AI/ML · ISRO/IIRS Geodata Processing · Saiket System Java · AI/ML using Python (Euphoria genX)</span><div class="score">Continuous learning</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="github">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">06 / GitHub activity</div><h2>Explore my repositories</h2></div><p>This section fetches public repository information from GitHub when the site is opened. It may take a moment to load.</p></div>
+      <div class="repo-controls"><input id="repoSearch" type="search" placeholder="Search my repositories..." aria-label="Search repositories"><select id="repoSort" aria-label="Sort repositories"><option value="updated">Recently updated</option><option value="stars">Most stars</option><option value="name">Name A–Z</option></select></div>
+      <div id="repoStatus" class="status" role="status">Loading public repositories from GitHub…</div>
+      <div id="repoGrid" class="grid"></div>
+      <p style="margin-top:22px"><a class="btn secondary" href="https://github.com/Suryadityadey" target="_blank" rel="noreferrer">View complete GitHub profile ↗</a></p>
+    </div>
+  </section>
+
+  <section id="beyond">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">07 / Beyond code</div><h2>Teamwork, discipline<br>& communication.</h2></div></div>
+      <div class="grid">
+        <div class="card achievement"><span class="symbol">🏅</span><div><h3>Hackathons</h3><p>Finalist — Synapse by IEEE Hackathon and Geekathon Hackathon.</p></div></div>
+        <div class="card achievement"><span class="symbol">⚽</span><div><h3>Football</h3><p>Junior National League player; represented Mohun Bagan Football Club.</p></div></div>
+        <div class="card achievement"><span class="symbol">🏊</span><div><h3>Swimming</h3><p>District- and state-level swimmer.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><div><div class="mono">08 / Contact</div><h2>Let's connect.</h2></div><p>For software development, AI/ML, internships, collaborations or technical discussions, feel free to reach out.</p></div>
+      <div class="contact">
+        <div class="contact-panel"><h3>Suryaditya Dey</h3><p>Computer Science & Engineering · Narula Institute of Technology<br>Kolkata, West Bengal, India</p><a class="btn primary" href="mailto:suryaditya9153@gmail.com">Send an email ↗</a></div>
+        <div class="contact-links">
+          <a href="mailto:suryaditya9153@gmail.com">✉ &nbsp; suryaditya9153@gmail.com</a>
+          <a href="tel:+917980808977">☎ &nbsp; +91 7980808977</a>
+          <a href="https://www.linkedin.com/in/suryaditya-dey-658143271/" target="_blank" rel="noreferrer">in &nbsp; LinkedIn profile ↗</a>
+          <a href="https://github.com/Suryadityadey" target="_blank" rel="noreferrer">⌘ &nbsp; GitHub profile ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footerin"><span>© <span id="year"></span> Suryaditya Dey. Built with HTML, CSS & JavaScript.</span><span>Designed for clarity, curiosity and continuous growth.</span></div></footer>
+<script>
+  const username = "Suryadityadey";
+  const repoGrid = document.getElementById("repoGrid");
+  const repoStatus = document.getElementById("repoStatus");
+  const searchInput = document.getElementById("repoSearch");
+  const sortSelect = document.getElementById("repoSort");
+  let repositories = [];
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("menuBtn").addEventListener("click", () => {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+  document.querySelectorAll("#navLinks a").forEach(a => a.addEventListener("click", () => document.getElementById("navLinks").classList.remove("open")));
+
+  function renderRepos() {
+    const q = searchInput.value.trim().toLowerCase();
+    let list = repositories.filter(r => `${r.name} ${r.description || ""} ${r.language || ""}`.toLowerCase().includes(q));
+    if (sortSelect.value === "stars") list.sort((a,b) => b.stargazers_count - a.stargazers_count);
+    else if (sortSelect.value === "name") list.sort((a,b) => a.name.localeCompare(b.name));
+    else list.sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at));
+    repoGrid.innerHTML = "";
+    if (!list.length) {
+      repoStatus.textContent = repositories.length ? "No repositories match that search." : "No public repositories were returned.";
+      return;
+    }
+    repoStatus.textContent = `Showing ${list.length} of ${repositories.length} public repositories.`;
+    list.slice(0, 12).forEach(repo => {
+      const card = document.createElement("article");
+      card.className = "card repo-card";
+      const title = document.createElement("h3"); title.textContent = repo.name;
+      const desc = document.createElement("p"); desc.textContent = repo.description || "No description added yet.";
+      const tags = document.createElement("div"); tags.className = "tags";
+      if (repo.language) { const t = document.createElement("span"); t.className = "tag"; t.textContent = repo.language; tags.appendChild(t); }
+      const foot = document.createElement("div"); foot.className = "repo-foot";
+      foot.textContent = `★ ${repo.stargazers_count}  ⑂ ${repo.forks_count}`;
+      const link = document.createElement("a"); link.href = repo.html_url; link.target = "_blank"; link.rel = "noreferrer"; link.textContent = "View repository ↗";
+      card.append(title, desc, tags, foot, link); repoGrid.appendChild(card);
+    });
+  }
+  searchInput.addEventListener("input", renderRepos);
+  sortSelect.addEventListener("change", renderRepos);
+
+  fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`)
+    .then(response => {
+      if (!response.ok) throw new Error(response.status === 403 ? "GitHub API rate limit reached. Please open the GitHub profile directly." : "Could not load GitHub repositories.");
+      return response.json();
+    })
+    .then(data => { repositories = data.filter(r => !r.fork); renderRepos(); })
+    .catch(error => { repoStatus.textContent = `${error.message} `; const a = document.createElement("a"); a.href = `https://github.com/${username}?tab=repositories`; a.textContent = "Browse repositories on GitHub ↗"; a.style.color = "var(--cyan)"; repoStatus.appendChild(a); });
+</script>
+</body>
+</html>
